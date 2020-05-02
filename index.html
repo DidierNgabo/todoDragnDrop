@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/scripts.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="toogle">
+      <!--toogle start-->
+      <label class="switch">
+        <input type="checkbox" id="chkbox" />
+        <span class="slider round"></span>
+      </label>
+      Dark mode
+    </div>
+
+    <!--toggle end-->
+    <div class="form">
+      <input type="text" id="todo" placeholder="add a todo" />
+      <button id="btn">ADD</button>
+    </div>
+    <div class="container" id="container">
+      <div
+        class="todo"
+        id="todolist"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2>TODO</h2>
+        <ul class="li-item"></ul>
+      </div>
+      <div
+        class="ongoing"
+        id="ongoing"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2>ONGOING</h2>
+        <ul></ul>
+      </div>
+      <div
+        class="done"
+        id="done"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        <h2>DONE</h2>
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+</html>
